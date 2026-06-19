@@ -1,0 +1,27 @@
+{ self, inputs, ... }: {
+    flake.homeModules.kitty = { pkgs, lib, ... }: {
+      programs.kitty = {
+        enable = true;
+        settings = {
+        font_family = "JetBrainsMono NF";
+        font_size = 14;
+        cursor_shape = "block";
+        scrollback_lines = 1600;
+        url_style = "curly";
+        open_url_with = "default";
+        detect_urls = true;
+        show_hyperlink_targets = true;
+        underline_hyperlinks = "hover";
+        sync_to_monitor = false;
+        enable_audio_bell = false;
+        visual_bell_duration = 0.0;
+        window_margin_width = 5;
+        confirm_os_window_close = 2;
+        background_opacity = 0.81;
+        background_blur = 0;
+        shell_integration = "false_cursor";
+        include = "./themes/noctalia.conf";
+        };
+      };
+    };
+}
