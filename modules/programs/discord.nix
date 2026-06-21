@@ -19,8 +19,8 @@
                     deviceSelect = false;
                   };
                 spellCheckLanguages = [
-                    "en-US";
-                    "en";
+                    "en-US"
+                    "en"
                   ];
               };
             equicord = {
@@ -31,7 +31,7 @@
                 themeLinks = [];
                 eagerPatches = false;
                 enabledThemes = [
-                  "noctalia.theme.css";
+                  "noctalia.theme.css"
                 ];
                 enabledThemeLinks = [];
                 enableOnlineThemes = true;
