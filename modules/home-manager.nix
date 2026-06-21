@@ -14,7 +14,6 @@
             neovim
             ncdu
             eza
-            hyfetch
             yazi
             tree
             protonplus
