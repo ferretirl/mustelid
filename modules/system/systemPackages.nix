@@ -15,6 +15,7 @@
           wget
           gcc
           wl-clipboard
+          fzf
           tree-sitter
           psmisc
           terminus_font
