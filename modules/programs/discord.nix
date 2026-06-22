@@ -83,7 +83,7 @@
                         enabled = true;
                       };
                     WebRichPresence = {
-                        enabled = true;
+                        enabled = false;
                       };
                     ClearURLs = {
                         enabled = true;
