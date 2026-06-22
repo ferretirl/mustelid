@@ -40,6 +40,7 @@
                {
                type = "packages";
                key = "   󰮯 ";
+               format = "{nix-all} (nix) {flatpak-all} (flatpak)";
                keyColor = "blue";
                }
                {
