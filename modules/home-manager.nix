@@ -13,6 +13,7 @@
         home.packages = with pkgs; [
             neovim
             oculante
+            lxqt.pavucontrol-qt
             mpv
             adw-gtk3
             papirus-icon-theme
@@ -29,7 +30,6 @@
             slurp
             faugus-launcher
             bitwarden-desktop
-            inputs.noctalia.packages.${pkgs.stdenv.hostPlatform.system}.default
             inputs.helium.packages.${system}.default
             filezilla
             proton-vpn

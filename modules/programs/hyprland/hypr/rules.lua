@@ -21,6 +21,7 @@ local floatTitles = {
 	"^[Pp]icture[-%s]?[Ii]n[-%s]?[Pp]icture",
 	".*is sharing (a window|your screen).*",
 	"^Friends List",
+  "Volume Control"
 }
 for _, floatd in ipairs(floatTitles) do
 	hl.window_rule({ match = { title = floatd }, float = true })
