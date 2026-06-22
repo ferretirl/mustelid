@@ -12,6 +12,11 @@
         imports = builtins.attrValues self.homeModules;
         home.packages = with pkgs; [
             neovim
+            mlocate
+            adw-gtk3
+            papirus-icon-theme
+            nwg-look
+            qt6Packages.qt6ct
             ncdu
             eza
             yazi
