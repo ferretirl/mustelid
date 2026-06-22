@@ -9,8 +9,6 @@
 hl.env("XCURSOR_THEME", "Remus-White")
 hl.env("XCURSOR_SIZE", "32")
 
-hl.env("HYPRSHOT_DIR", "/home/ferret/Pictures/Screenshots/")
-
 hl.env("OZONE_PLATFORM", "wayland")
 hl.env("ELECTRON_OZONE_PLATFORM_HINT", "auto")
 

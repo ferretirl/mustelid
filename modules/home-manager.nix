@@ -18,7 +18,6 @@
             tree
             protonplus
             prismlauncher
-            hyprshot
             hyprpicker
             grim
             slurp
