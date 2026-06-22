@@ -13,6 +13,7 @@
         environment.systemPackages = with pkgs; [
           git
           wget
+          mlocate
           gcc
           wl-clipboard
           fzf

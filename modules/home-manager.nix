@@ -12,7 +12,6 @@
         imports = builtins.attrValues self.homeModules;
         home.packages = with pkgs; [
             neovim
-            mlocate
             oculante
             mpv
             adw-gtk3
