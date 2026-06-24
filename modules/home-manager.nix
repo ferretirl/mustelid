@@ -5,9 +5,9 @@
       useGlobalPkgs = true;
       useUserPackages = true;
       extraSpecialArgs = { inherit inputs self; };
-      users.ferret = {
-        home.username = "ferret";
-        home.homeDirectory = lib.mkForce "/home/ferret";
+      users.alice = {
+        home.username = "alice";
+        home.homeDirectory = lib.mkForce "/home/alice";
         home.stateVersion = "26.11";
         imports = builtins.attrValues self.homeModules;
         home.packages = with pkgs; [

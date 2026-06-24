@@ -24,7 +24,7 @@
         self.nixosModules.networking
         self.nixosModules.time-locale
         self.nixosModules.bootloader
-        self.nixosModules.usersFerret
+        self.nixosModules.usersAlice
         self.nixosModules.systemPackages
         self.nixosModules.consoleSetup
         self.nixosModules.fontSetup

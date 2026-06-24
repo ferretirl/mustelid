@@ -6,7 +6,7 @@
 
          nix.settings = {
          experimental-features = [ "nix-command" "flakes" ];
-         trusted-users = [ "root" "ferret" "@wheel" ];
+         trusted-users = [ "root" "alice" "@wheel" ];
          # noctalia + cachy kernel + hyprland
         substituters = [
            "https://hyprland.cachix.org"
