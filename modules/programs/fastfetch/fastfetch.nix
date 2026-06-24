@@ -7,7 +7,7 @@
              "$schema" = "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json";
              logo = {
                type = "auto";
-               source = "~/mustelid/modules/programs/fastfetch/assets/nixaa.png";
+               # source = "~/mustelid/modules/programs/fastfetch/assets/nixaa.png";
                width = 49;
                height = 20;
                # color = {
