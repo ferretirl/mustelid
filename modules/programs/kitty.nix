@@ -17,7 +17,7 @@
         visual_bell_duration = 0.0;
         window_margin_width = 5;
         confirm_os_window_close = 2;
-        background_opacity = 0.79;
+        background_opacity = 0.75;
         background_blur = 0;
         shell_integration = "false_cursor";
         include = "./themes/noctalia.conf";

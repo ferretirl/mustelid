@@ -67,7 +67,7 @@ local opacityClasses = {
 	"dev.noctalia.Noctalia.Settings",
 }
 for _, opacity in ipairs(opacityClasses) do
-	hl.window_rule({ match = { class = opacity }, opacity = 0.81 })
+	hl.window_rule({ match = { class = opacity }, opacity = 0.75 })
 end
 
 -- PiP - pin to all workspaces
