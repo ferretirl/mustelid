@@ -1,7 +1,7 @@
 { self, inputs, ... }: {
     flake.homeModules.zen-browser = { pkgs, lib, ... }: {
         imports = [
-        inputs.zen-browser.homeModules.twilight
+            inputs.zen-browser.homeModules.twilight
         ];
         
     programs.zen-browser = {
@@ -16,10 +16,12 @@
           "zen.workspaces.continue-where-left-off" = true;
           "zen.workspaces.natural-scroll" = true;
           "zen.view.compact.hide-tabbar" = true;
-          "zen.view.compact.hide-toolbar" = true;
+          "zen.view.compact.hide-toolbar" = false;
           "zen.view.compact.animate-sidebar" = false;
           "zen.welcome-screen.seen" = true;
           "zen.urlbar.behavior" = "float";
+          "zen.window-sync.enabled" = false;
+          "zen.window-sync.prefer-unsynced-windows" = true;
           "zen.view.use-single-toolbar" = true;
         };
   
@@ -43,120 +45,9 @@
           ];
         };
   
-  
         search = import ../../config/search-config.nix { inherit pkgs; };
   
-        pinsForce = true;
-        pinsForceAction = "demote";
-        pins = let
-          stateDir = {
-            "State" = {
-              id = "482bc905-c00c-4c49-8a56-367668bf70b9";
-              workspace = spaces."Rendezvous".id;
-              folderIcon = "chrome://browser/skin/zen-icons/selectable/eye.svg";
-              isGroup = true;
-              isFolderCollapsed = true;
-              editedTitle = true;
-              position = 200;
-            };
-            "Tailscale" = {
-              id = "4398f631-714c-450f-9b10-eb69ab27244a";
-              url = "https://login.tailscale.com/admin/machines";
-              workspace = spaces."Rendezvous".id;
-              folderParentId = pins."State".id;
-              position = 153;
-            };
-          };
-        in
-          {
-            "GitHub" = {
-              id = "48e8a119-5a14-4826-9545-91c8e8dd3bf6";
-              workspace = spaces."Rendezvous".id;
-              url = "https://github.com";
-              position = 101;
-              isEssential = false;
-            };
-            "PairDrop" = {
-              id = "c70a0cd7-6ee8-470f-85c6-85a73a7a6196";
-              url = "https://pairdrop.net/";
-              position = 104;
-              isEssential = true;
-            };
-          }
-          // stateDir;
-  
         containersForce = true;
-  
-        spacesForce = true;
-        spaces = {
-          "Rendezvous" = {
-            id = "572910e1-4468-4832-a869-0b3a93e2f165";
-            icon = "chrome://browser/skin/zen-icons/selectable/navigate.svg";
-            position = 1000;
-            theme = {
-              type = "gradient";
-              colors = [
-                {
-                  red = 123;
-                  green = 56;
-                  blue = 58;
-                  algorithm = "analogous";
-                  type = "explicit-lightness";
-                  lightness = 35;
-                  position.x = 301;
-                  position.y = 176;
-                  primary = true;
-                  custom = false;
-                }
-                {
-                  red = 123;
-                  green = 110;
-                  blue = 55;
-                  algorithm = "analogous";
-                  type = "explicit-lightness";
-                  lightness = 35;
-                  position.x = 260;
-                  position.y = 271;
-                  primary = false;
-                  custom = false;
-                }
-                {
-                  red = 122;
-                  green = 56;
-                  blue = 114;
-                  algorithm = "analogous";
-                  type = "explicit-lightness";
-                  lightness = 35;
-                  position.x = 255;
-                  position.y = 84;
-                  primary = false;
-                  custom = false;
-                }
-              ];
-              opacity = 0.8;
-              texture = 0.5;
-            };
-          };
-          "Research" = {
-            id = "ec287d7f-d910-4860-b400-513f269dee77";
-            icon = "chrome://browser/skin/zen-icons/selectable/logo-rss.svg";
-            position = 1001;
-            theme = {
-              type = "gradient";
-              colors = [
-                {
-                  red = 171;
-                  green = 219;
-                  blue = 227;
-                  algorithm = "floating";
-                  type = "explicit-lightness";
-                }
-              ];
-              opacity = 0.2;
-              texture = 0.5;
-            };
-          };
-        };
   
         keyboardShortcutsVersion = 19;
         keyboardShortcuts = [

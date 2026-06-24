@@ -1,6 +1,6 @@
 {pkgs, ...}: {
   force = true;
-  default = "google";
+  default = "ddg";
   privateDefault = "ddg";
   engines = let
     nixSnowflakeIcon = "${pkgs.nixos-icons}/share/icons/hicolor/scalable/apps/nix-snowflake.svg";
