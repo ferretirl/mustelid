@@ -9,7 +9,7 @@
       languagePacks = ["en-US"];
       policies = import ../../config/policies-config.nix;
       setAsDefaultBrowser = true;
-      enablePrivateDesktopEntry = true;
+      enablePrivateDesktopEntry = false;
   
       profiles.default = rec {
         settings = {
