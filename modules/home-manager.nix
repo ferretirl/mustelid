@@ -28,6 +28,7 @@
             yazi
             tree
             protonplus
+            protontricks
             prismlauncher
             hyprpicker
             grim
