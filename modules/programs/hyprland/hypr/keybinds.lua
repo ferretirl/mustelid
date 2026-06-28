@@ -9,14 +9,18 @@
 local noctalia = "noctalia msg"
 
 -- Focus movement
-hl.bind("SUPER + left", hl.dsp.focus({ direction = "left" }))
-hl.bind("SUPER + right", hl.dsp.focus({ direction = "right" }))
-hl.bind("SUPER + up", hl.dsp.focus({ direction = "up" }))
-hl.bind("SUPER + down", hl.dsp.focus({ direction = "down" }))
-hl.bind("SUPER + H", hl.dsp.focus({ direction = "left" }))
-hl.bind("SUPER + L", hl.dsp.focus({ direction = "right" }))
-hl.bind("SUPER + K", hl.dsp.focus({ direction = "up" }))
-hl.bind("SUPER + J", hl.dsp.focus({ direction = "down" }))
+hl.bind("SUPER + left", hl.dsp.focus({ direction = "left" }), { repeating = true })
+hl.bind("SUPER + right", hl.dsp.focus({ direction = "right" }), { repeating = true })
+hl.bind("SUPER + up", hl.dsp.focus({ direction = "up" }), { repeating = true })
+hl.bind("SUPER + down", hl.dsp.focus({ direction = "down" }), { repeating = true })
+hl.bind("SUPER + H", hl.dsp.focus({ direction = "left" }), { repeating = true })
+hl.bind("SUPER + L", hl.dsp.focus({ direction = "right" }), { repeating = true })
+hl.bind("SUPER + K", hl.dsp.focus({ direction = "up" }), { repeating = true })
+hl.bind("SUPER + J", hl.dsp.focus({ direction = "down" }), { repeating = true })
+
+-- Scrolling layout binds 
+hl.bind("SUPER + CTRL + L", hl.dsp.layout("colresize +conf"))
+hl.bind("SUPER + CTRL + H", hl.dsp.layout("colresize -conf"))
 
 -- Window movement
 hl.bind("SUPER + SHIFT + left", hl.dsp.window.move({ direction = "left" }))
@@ -30,7 +34,7 @@ hl.bind("SUPER + SHIFT + J", hl.dsp.window.move({ direction = "down" }))
 
 -- Close window
 hl.bind("ALT + F4", hl.dsp.window.close())
-hl.bind("SUPER + Q", hl.dsp.window.close())
+hl.bind("SUPER + Q", hl.dsp.window.close(), { repeating = true })
 
 -- Floating
 hl.bind("SUPER + ALT + space", hl.dsp.window.float({ action = "toggle" }))
@@ -39,16 +43,16 @@ hl.bind("SUPER + ALT + space", hl.dsp.window.float({ action = "toggle" }))
 hl.bind("SUPER + F", hl.dsp.window.fullscreen({ mode = "fullscreen" }))
 
 -- Workspace navigation
-hl.bind("CTRL + SUPER + right", hl.dsp.focus({ workspace = "r+1" }))
-hl.bind("CTRL + SUPER + left", hl.dsp.focus({ workspace = "r-1" }))
-hl.bind("CTRL + SUPER + L", hl.dsp.focus({ workspace = "r+1" }))
-hl.bind("CTRL + SUPER + H", hl.dsp.focus({ workspace = "r-1" }))
+hl.bind("CTRL + SUPER + down", hl.dsp.focus({ workspace = "r+1" }), { repeating = true })
+hl.bind("CTRL + SUPER + up", hl.dsp.focus({ workspace = "r-1" }), { repeating = true })
+hl.bind("CTRL + SUPER + J", hl.dsp.focus({ workspace = "r+1" }), { repeating = true })
+hl.bind("CTRL + SUPER + K", hl.dsp.focus({ workspace = "r-1" }), { repeating = true })
 
 -- Move window to workspace
-hl.bind("CTRL + SUPER + SHIFT + right", hl.dsp.window.move({ workspace = "r+1" }))
-hl.bind("CTRL + SUPER + SHIFT + left", hl.dsp.window.move({ workspace = "r-1" }))
-hl.bind("CTRL + SUPER + SHIFT + L", hl.dsp.window.move({ workspace = "r+1" }))
-hl.bind("CTRL + SUPER + SHIFT + H", hl.dsp.window.move({ workspace = "r-1" }))
+hl.bind("CTRL + SUPER + SHIFT + down", hl.dsp.window.move({ workspace = "r+1" }), { repeating = true })
+hl.bind("CTRL + SUPER + SHIFT + up", hl.dsp.window.move({ workspace = "r-1" }), { repeating = true })
+hl.bind("CTRL + SUPER + SHIFT + J", hl.dsp.window.move({ workspace = "r+1" }), { repeating = true })
+hl.bind("CTRL + SUPER + SHIFT + K", hl.dsp.window.move({ workspace = "r-1" }), { repeating = true })
 
 -- Mouse scroll workspace
 hl.bind("SUPER + mouse_down", hl.dsp.focus({ workspace = "r+1" }))
@@ -59,12 +63,12 @@ hl.bind("SUPER + mouse:272", hl.dsp.window.drag(), { mouse = true })
 hl.bind("SUPER + mouse:273", hl.dsp.window.resize(), { mouse = true })
 
 -- Apps
-hl.bind("SUPER + T", hl.dsp.exec_cmd("kitty -1"))
-hl.bind("SUPER + E", hl.dsp.exec_cmd("kitty -1 yazi"))
-hl.bind("SUPER + W", hl.dsp.exec_cmd("zen-twilight"))
-hl.bind("SUPER + C", hl.dsp.exec_cmd("kitty -1 nvim"))
-hl.bind("CTRL + SUPER + V", hl.dsp.exec_cmd("pavucontrol-qt"))
-hl.bind("CTRL + SHIFT + Escape", hl.dsp.exec_cmd("kitty -1 btop"))
+hl.bind("SUPER + T", hl.dsp.exec_cmd("kitty -1"), { repeating = true })
+hl.bind("SUPER + E", hl.dsp.exec_cmd("kitty -1 yazi"), { repeating = true })
+hl.bind("SUPER + W", hl.dsp.exec_cmd("zen-twilight"), { repeating = true })
+hl.bind("SUPER + C", hl.dsp.exec_cmd("kitty -1 nvim"), { repeating = true })
+hl.bind("CTRL + SUPER + V", hl.dsp.exec_cmd("pavucontrol-qt"), { repeating = true })
+hl.bind("CTRL + SHIFT + Escape", hl.dsp.exec_cmd("kitty -1 btop"), { repeating = true })
 
 -- Scratchpads
 hl.bind("SUPER + D", hl.dsp.workspace.toggle_special("equibop"))

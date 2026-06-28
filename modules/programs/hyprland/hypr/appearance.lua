@@ -14,24 +14,24 @@ hl.config({
     col = {
       active_border = {
         colors = {
-          "rgba(c98a3aff)",
-          "rgba(c9aa40ff)",
-          "rgba(e8dfc0ff)",
-          "rgba(5a8fa8ff)",
-          "rgba(243848ff)",
+          "rgba(f6b26bff)",
+          "rgba(ffe597ff)",
+          "rgba(ffffffff)",
+          "rgba(86c8ffff)",
+          "rgba(5b96faff)",
         },
         angle = 90,
       },
       inactive_border = "rgba(1a1a1aaa)",
     },
-    border_size = 4,
+    border_size = 3,
     allow_tearing = false,
-    layout = "master",
+    layout = "scrolling",
   },
 
   decoration = {
-    rounding = 10,
-    rounding_power = 2,
+    rounding = 9,
+    rounding_power = 3,
     active_opacity = 1.0,
     inactive_opacity = 1.0,
 
@@ -45,10 +45,20 @@ hl.config({
 
     blur = {
       enabled = true,
-      size = 2,
-      passes = 1,
-      vibrancy = 0.1695,
       xray = false,
+      special = false,
+      new_optimizations = true,
+      size = 3,
+      passes = 2,
+      brightness = 1,
+      noise = 0.05,
+      contrast = 0.89,
+      vibrancy = 0.1,
+      vibrancy_darkness = 0.5,
+      popups = false,
+      popups_ignorealpha = 0.6,
+      input_methods = true,
+      input_methods_ignorealpha = 0.8
     },
   },
 })
