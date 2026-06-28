@@ -5,7 +5,7 @@
             settings = {
                 discordBranch = "stable";
                 minimizeToTray = true;
-                arRPC = true;
+                arRPC = false;
                 splashColor = "rgb(212, 190, 152)";
                 splashBackground = "rgb(50, 48, 47)";
                 audio = {
@@ -83,7 +83,7 @@
                         enabled = true;
                       };
                     WebRichPresence = {
-                        enabled = false;
+                        enabled = true;
                       };
                     ClearURLs = {
                         enabled = true;
@@ -313,6 +313,9 @@
                         enabled = true;
                       };
                     UnlockedAvatarZoom = {
+                        enabled = true;
+                      };
+                    YoutubeAdblock = {
                         enabled = true;
                       };
 
