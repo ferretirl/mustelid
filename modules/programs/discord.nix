@@ -318,6 +318,9 @@
                     YoutubeAdblock = {
                         enabled = true;
                       };
+                    FixYoutubeEmbeds = {
+                        enabled = true;
+                      };
 
                   };
                 uiElements = {
