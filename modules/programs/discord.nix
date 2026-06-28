@@ -5,7 +5,7 @@
             settings = {
                 discordBranch = "stable";
                 minimizeToTray = true;
-                arRPC = false;
+                arRPC = true;
                 splashColor = "rgb(212, 190, 152)";
                 splashBackground = "rgb(50, 48, 47)";
                 audio = {
