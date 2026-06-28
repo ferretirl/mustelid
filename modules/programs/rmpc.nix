@@ -22,7 +22,7 @@
             select_current_song_on_change: false,
             album_art: (
                 method: Auto,
-                max_size_px: (width: 500, height: 500),
+                max_size_px: (width: 1000, height: 1000),
                 disabled_protocols: ["http://", "https://"],
                 vertical_align: Center,
                 horizontal_align: Center,
