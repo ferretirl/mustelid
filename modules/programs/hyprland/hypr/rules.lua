@@ -48,6 +48,7 @@ end
 -- Focus on activate app list
 local focusClasses = {
 	"org.gnome.Nautilus",
+  ".*firefox.*",
   "zen.*",
 	"helium.*",
 	"brave-origin-.*",
@@ -97,11 +98,6 @@ hl.window_rule({
 	match = { class = "kitty", title = ".*rmpc.*" },
 	float = false,
 	workspace = "special:rmpc",
-})
-
-hl.window_rule({
-	workspace = "special:rmpc",
-	match = { class = "kitty-rmpc" },
 })
 
 -- Steam games tearing
