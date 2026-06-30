@@ -3,7 +3,7 @@
         fonts = {
             packages = with pkgs; [
               nerd-fonts.jetbrains-mono
-              nerd-fonts.departure-mono
+              ioskeley-mono.normal-NF
               noto-fonts
               noto-fonts-cjk-sans
               noto-fonts-color-emoji
