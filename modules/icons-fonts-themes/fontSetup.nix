@@ -3,6 +3,7 @@
         fonts = {
             packages = with pkgs; [
               nerd-fonts.jetbrains-mono
+              maple-mono.NF-CN-unhinted
               ioskeley-mono.normal-NF
               noto-fonts
               noto-fonts-cjk-sans

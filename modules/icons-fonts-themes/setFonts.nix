@@ -4,7 +4,7 @@
             font = {
                 nerdFont = lib.mkOption {
                     type = lib.types.str;
-                    default = "IoskeleyMono Nerd Font";
+                    default = "Maple Mono NF CN";
                   };
               };
           };
