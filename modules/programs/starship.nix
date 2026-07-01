@@ -17,7 +17,7 @@
                 style = "";
             };
             git_branch = {
-                format = " [[ ](#f2789a bold)$branch](#f5b8cf)";
+                format = " [[ ](#f5b8cf bold)$branch](#f5b8cf)";
                 symbol = "";
             };
             git_status = {
