@@ -12,6 +12,7 @@
 
         environment.systemPackages = with pkgs; [
           git
+          hyprshutdown
           rocmPackages.rocm-smi
           ffmpeg
           wget
