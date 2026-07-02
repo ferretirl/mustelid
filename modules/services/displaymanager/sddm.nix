@@ -9,7 +9,7 @@
           AutoFingerprintOnLoad=true
           Background="./illit1.jpeg"
           Font="Maple Mono NF CN"
-          FontSize="12"
+          FontSize="20"
           FormPosition="center"
           Blur="0.03"
           FormBackgroundColor="#1a1a1c"
@@ -18,12 +18,15 @@
           LoginButtonBackgroundColor="#f5b8cf"
           PasswordFieldBackgroundColor="#1a1a1c"
           PasswordFieldTextColor="#f0dce5"
+          PlaceholderTextColor="#f0dce5"
           DateTextColor="#f0dce5"
           TimeTextColor="#f5b8cf"
+          HourFormat="HH:mm"
+          DateFormat="dddd d MMMM"
           HoverLoginButtonBackgroundColor="#f2789a"
           SystemButtonsIconsColor="#f0dce5"
           HoverSystemButtonsIconsColor="#f2789a"
-          EnvironmentButtonTextColor="#f5b8cf"
+          EnvironmentButtonTextColor="#1a1a1c"
           EOF
         '';
       });
