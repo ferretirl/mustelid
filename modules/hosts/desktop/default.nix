@@ -23,6 +23,7 @@
         self.nixosModules.fontSetup
         self.nixosModules.flatpak
         self.nixosModules.locateService
+        self.nixosModules.docker
         ];
         specialArgs = { inherit inputs; };
       };
