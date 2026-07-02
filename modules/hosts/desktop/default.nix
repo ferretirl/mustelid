@@ -24,6 +24,7 @@
         self.nixosModules.flatpak
         self.nixosModules.locateService
         self.nixosModules.docker
+        self.nixosModules.sddm
         ];
         specialArgs = { inherit inputs; };
       };

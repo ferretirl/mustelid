@@ -15,6 +15,8 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    thyx.url = "github:rccyx/thyx";
+
     noctalia = {
     	url = "github:noctalia-dev/noctalia";
 	  };
